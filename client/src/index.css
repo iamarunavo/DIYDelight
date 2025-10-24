@@ -1,24 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
 
-#root {
-    --font-family: Rubik, Verdana, sans-serif;
-    --primary: rgb(115, 2, 12);
-    --primary-hover: black;
-    --color: white;
-    --h1-color: var(--color);
-    --h2-color: var(--color);
-    --h3-color: var(--color);
-    --card-background-color: rgba(0, 0, 0, 0.8);
-    --card-sectionning-background-color: rgba(0, 0, 0, 0.8);
-    --form-element-active-border-color: var(--color);
-    --form-element-placeholder-color: gray;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-bg: #0F1117;
+    --color-surface: rgba(255, 255, 255, 0.05);
+    --color-primary: #6C63FF;
+    --color-accent: #00E0FF;
+    --color-success: #00FFAA;
+    --color-error: #FF4F6D;
+    --color-text-main: #E5E7EB;
+    --color-text-dim: #9CA3AF;
+    
+    /* Animation durations */
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    --duration-pulse: 800ms;
+    
+    /* Animation easings */
+    --ease-out: ease-out;
+    --ease-in-out: ease-in-out;
+    --ease-material: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #root h1 {
     font-size: 3rem;
-    margin-bottom: 0px;
 }
 
+/* Custom styling for headings */
 #root h2 {
     margin-bottom: 0px;
 }

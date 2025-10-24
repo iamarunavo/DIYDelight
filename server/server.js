@@ -4,11 +4,11 @@ import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
 // import the router from your routes file
-
+import pcsRouter from './routes/pcsRoutes.js'
 
 dotenv.config()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 const app = express()
 
@@ -23,6 +23,7 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
+app.use('/api', pcsRouter)
 
 
 if (process.env.NODE_ENV === 'production') {

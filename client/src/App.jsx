@@ -1,35 +1,36 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import ViewCars from './pages/ViewCars'
-import EditCar from './pages/EditCar'
-import CreateCar from './pages/CreateCar'
-import CarDetails from './pages/CarDetails'
+import ViewBuilds from './pages/ViewBuilds'
+import EditBuild from './pages/EditBuild'
+import CreateBuild from './pages/CreateBuild'
+import BuildDetails from './pages/BuildDetails'
+import PCHeroBackground from './components/PCHeroBackground'
 import './App.css'
 
 const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <CreateCar title='BOLT BUCKET | Customize' />
+      element: <CreateBuild title='PC FORGE | Customize PC' />
     },
     {
-      path:'/customcars',
-      element: <ViewCars title='BOLT BUCKET | Custom Cars' />
+      path:'/custombuilds',
+      element: <ViewBuilds title='PC FORGE | My PC Builds' />
     },
     {
-      path: '/customcars/:id',
-      element: <CarDetails title='BOLT BUCKET | View' />
+      path: '/custombuilds/:id',
+      element: <BuildDetails title='PC FORGE | Build Details' />
     },
     {
       path: '/edit/:id',
-      element: <EditCar title='BOLT BUCKET | Edit' />
+      element: <EditBuild title='PC FORGE | Edit Build' />
     }
   ])
 
   return (
     <div className='app'>
-
+      <PCHeroBackground />
       <Navigation />
 
       { element }

@@ -2,7 +2,7 @@
 
 Submitted by: **Arunavo Chowdhury**
 
-About this web app: **App description here**
+About this web app: **A gaming PC customizer**
 
 Time spent: **5** hours
 

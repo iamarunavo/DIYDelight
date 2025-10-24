@@ -38,7 +38,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-<img src="client/public/demo.gif" alt="Demo GIF" width="100%" />
+<img src="https://i.imgur.com/e8eZYQw.gif" alt="Demo GIF" width="100%" />
 
 Here's a walkthrough of implemented required features:
 
